@@ -1,0 +1,59 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 10px 0 10px 10px;
+}
+
+.grid-container .item1{
+    grid-area: 1 / 1 / 2 / 3;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.grid-container .item1 b{
+    padding-left: 10px;
+}
+
+.grid-container .item2{
+    cursor: pointer;
+    grid-area: 1 / 3 / 3 / 4;
+    padding-top: 10px;
+    justify-self: center;
+    align-self: center;
+    fill: rgb(0, 80, 255);
+    position: relative;
+    z-index: 5;
+}
+
+.grid-container .item2 rect{
+    transform-origin: 50%;
+    transition: transform 0.3s;
+}
+
+.grid-container .item2s{
+    fill: black;
+}
+
+.grid-container .item2s rect:nth-child(1){
+    transform-origin: 48% 0;
+    transform: rotate(-135deg) translate(0, -19.5px);/*(正左上負右下,正右上負左下)*/
+}
+
+.grid-container .item2s rect:nth-child(2){
+    transform-origin: 50%;
+    transform: rotate(-45deg);
+}
+
+.grid-container .item2s rect:nth-child(3){
+    transform-origin: 52% 100%;
+    transform: rotate(-135deg) translate(0, 19.5px);/*(正左上負右下,正右上負左下)*/
+}
+
+.grid-container .item3{
+    grid-area: 2 / 1 / 3 / 3;
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 0px 10px;
+}
