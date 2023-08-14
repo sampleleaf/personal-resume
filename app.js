@@ -1,5 +1,7 @@
-const svgstyle = document.querySelector('#svgstyle')
+const navEvent = document.querySelector('#navEvent')
+const nav = document.querySelector('#nav')
 
-svgstyle.addEventListener('click',function(){
-    svgstyle.classList.toggle('item2s')
+navEvent.children[0].addEventListener('click',function(){
+    navEvent.classList.toggle('item2s')//change svg style
+    nav.classList.toggle('nav2')
 })

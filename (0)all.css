@@ -12,3 +12,7 @@ a{
 .blue{
     color: rgb(0, 80, 255);
 }
+
+.hide{
+    display: none;
+}

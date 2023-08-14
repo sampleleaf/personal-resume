@@ -16,23 +16,36 @@
 }
 
 .grid-container .item2{
-    cursor: pointer;
     grid-area: 1 / 3 / 3 / 4;
     padding-top: 10px;
     justify-self: center;
     align-self: center;
     fill: rgb(0, 80, 255);
+}
+
+.grid-container .item2 svg{
+    cursor: pointer;
     position: relative;
     z-index: 5;
 }
 
-.grid-container .item2 rect{
+.grid-container .item2s{
+    fill: black;
+}
+
+.grid-container .item2 rect:nth-child(1){
+    transform-origin: 48% 0;
+    transition: transform 0.3s;
+}
+
+.grid-container .item2 rect:nth-child(2){
     transform-origin: 50%;
     transition: transform 0.3s;
 }
 
-.grid-container .item2s{
-    fill: black;
+.grid-container .item2 rect:nth-child(3){
+    transform-origin: 52% 100%;
+    transition: transform 0.3s;
 }
 
 .grid-container .item2s rect:nth-child(1){
@@ -56,4 +69,46 @@
     font-size: 14px;
     letter-spacing: 0.5px;
     padding: 0px 10px;
+}
+
+.grid-container .nav{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    transition: all 0.8s;
+}
+
+.grid-container .nav div{
+    position: relative;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    height: 200px;
+}
+
+.grid-container .nav2{
+    background-color: rgba(244, 236, 230);
+    top: 0;
+}
+
+.grid-container .nav a:link{
+    transition: all 0.3s ease;
+    visibility: hidden;
+    color: transparent;
+}
+
+.grid-container .nav2 a:link{
+    visibility: visible;
+    color: rgb(0, 0, 0);
+}
+
+.grid-container .nav2 a:nth-child(1):link{
+    color: rgb(0, 80, 255);
 }
