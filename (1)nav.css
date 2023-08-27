@@ -75,7 +75,7 @@
 
 .grid-container .nav{
     position: absolute;
-    z-index: 4;
+    z-index: 3;
     top: -10%;
     right: 0;
     width: 100vw;
@@ -89,7 +89,7 @@
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -55%);
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     display: grid;
     justify-content: center;
@@ -97,6 +97,7 @@
 }
 
 .grid-container .nav2{
+    z-index: 4;
     background-color: rgba(244, 236, 230);
     top: 0;
 }
