@@ -76,7 +76,7 @@
     .card{
         width: 93%;
         display: grid;
-        grid-template-columns: 40% calc(60% - 40px);
+        grid-template-columns: 43.8% calc(56.2% - 40px);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -90,8 +90,8 @@
 
 @media ( min-width : 938px ){
     .card{
-        width: 937px;
-        grid-template-columns: 375px 522.5px;
+        width: 856px;
+        grid-template-columns: 375px 441px;
     }
     .card > div:nth-child(1){
         width: 375px;
@@ -121,12 +121,12 @@
 
 .grid-card div:nth-child(1) img{
     border-radius: 50%;
-    width: 120px;
+    width: 37.5vw; /*120px*/
 }
 
 .grid-card div:nth-child(2){
     text-align: center;
-    font-size: 21px;
+    font-size: 6.5625vw; /*21px*/
     font-family: 'Mulish', sans-serif;
 }
 
@@ -139,32 +139,42 @@
 
 .grid-card div:nth-child(4){
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 1.5625vw; /*5px*/
+}
+
+.grid-card div:nth-child(4) button{
+    cursor: pointer;
+    width: 37.5vw; /*120px*/
+    height: 10.312vw; /*33px*/
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4.6875vw; /*15px*/
+    border-radius: 100px;
 }
 
 .grid-card div:nth-child(4) button:nth-child(1){
-    cursor: pointer;
-    width: 120px;
-    height: 33px;
     border: none;
-    border-radius: 100px;
     background-color: rgb(0, 80, 255);
     color: white;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
+    
 }
 
 .grid-card div:nth-child(4) button:nth-child(2){
-    cursor: pointer;
-    width: 120px;
-    height: 33px;
     border: 1px solid black;
-    border-radius: 100px;
     background-color: transparent;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
+}
+
+.grid-card div:nth-child(4) p{
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 0.8vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.814vw;
 }
 
 .grid-card div:nth-child(5){
+    margin: 0 auto;
     background-color: white;
     width: calc(100vw - 57px);
     height: 40px;
@@ -172,15 +182,98 @@
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     align-content: center;
-    column-gap: 30px;
+    column-gap: 9.375vw; /*30px*/
 }
 
 .grid-card div:nth-child(5) a:link, .grid-card div:nth-child(5) a:visited{
     color: black;
 }
 
+.grid-card div:nth-child(5) svg{
+    width: 6.25vw;
+    height: 6.25vw;
+}
+
+@media ( min-width : 375px ){
+    .grid-card div:nth-child(1) img{
+        width: 138.75px;
+    }
+    .grid-card div:nth-child(2){
+        font-size: 24.6px;
+    }
+    .grid-card div:nth-child(4){
+        column-gap: 5.86px;
+    }
+    .grid-card div:nth-child(4) button{
+        width: 140.63px;
+        height: 38.66px;
+        font-size: 17.5781px;
+    }
+    .grid-card div:nth-child(5){
+        column-gap: 35.1562px;
+    }
+    .grid-card div:nth-child(5) svg{
+        width: 23.4375px;
+        height: 23.4375px;
+    }
+}
+
 @media ( min-width : 415px ){
+    .card{
+        margin: 0 auto;
+    }
     .grid-card div:nth-child(5){
         width: 357px;
+    }
+}
+
+@media ( max-width : 599px ){
+    .grid-card div:nth-child(4) p{
+        display: none;
+    }
+}
+
+@media ( min-width : 600px ){
+    .grid-card div:nth-child(1) img{
+        width: 21.88vw;
+    }
+    .grid-card div:nth-child(2){
+        font-size: 2.88vw;
+    }
+    .grid-card div:nth-child(3) > div{
+        width: 50px;
+    }
+    .grid-card div:nth-child(4) button{
+        display: none;
+    }
+    .grid-card div:nth-child(5){
+        height: 100%;
+        width: calc(100vw * 0.93 * 0.438 - 6.93px);
+        column-gap: 3.2vw;
+    }
+    .grid-card div:nth-child(5) svg{
+        width: 2.666vw;
+        height: 2.666vw;
+    }
+}
+
+@media ( min-width : 938px ){
+    .grid-card div:nth-child(1) img{
+        width: 205px;
+    }
+    .grid-card div:nth-child(2){
+        font-size: 27px;
+    }
+    .grid-card div:nth-child(4) p{
+        font-size: 17px;
+        letter-spacing: 7.5px;
+    }
+    .grid-card div:nth-child(5){
+        width: 375px;
+        column-gap: 30px;
+    }
+    .grid-card div:nth-child(5) svg{
+        width: 25px;
+        height: 25px;
     }
 }
