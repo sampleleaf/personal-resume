@@ -311,7 +311,7 @@
 }
 
 .grid-content div:nth-child(4){
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 5vw;
 }
 
@@ -338,7 +338,7 @@
         margin-top: 5px;
         margin-left: 2.6652vw;
         row-gap: 0;
-        grid-template-rows: 15.99vw;
+        grid-template-rows: 15.99vw auto auto 19.0298vw;
     }
     .grid-content div:nth-child(1){
         align-self: center;
@@ -361,7 +361,7 @@
 @media ( min-width : 938px ){
     .grid-content{
         margin-left: 25px;
-        grid-template-rows: 150px;
+        grid-template-rows: 150px auto auto 178.5px;
     }
     .grid-content div:nth-child(1){
         font-size: 100px;

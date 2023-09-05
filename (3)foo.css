@@ -1,0 +1,55 @@
+.grid-footer{
+    display: grid;
+    font-family: 'Jost', sans-serif;
+    margin: 27px 0 40px;
+}
+
+.grid-footer > div:nth-child(2){
+    margin: 30px 20px 0;
+    font-size: 14px;
+}
+
+.grid-contact{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 15px;
+}
+
+.grid-contact > div{
+    margin: 0 20px;
+    line-height: 1.9;
+}
+
+.grid-contact div p:nth-child(1){
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.grid-contact div p:nth-child(2){
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+}
+
+.grid-contact > div:nth-child(3) > div{
+    display: grid;
+    grid-template-columns: repeat(3, 18px);
+    transform: translate(-4px, 0);
+    column-gap: 20px;
+}
+
+.grid-contact > div:nth-child(3) > div a:link, .grid-contact > div:nth-child(3) > div a:visited{
+    color: black;
+}
+
+.grid-contact > div:nth-child(3) > div a, .grid-contact > div:nth-child(3) > div a svg{
+    width: 18px;
+    height: 18px;
+}
+
+@media ( min-width : 410px ){
+    .grid-contact{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
