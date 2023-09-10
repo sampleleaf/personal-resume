@@ -291,15 +291,9 @@
     }
 }
 
-@media ( min-width : 800px ) {
-    .duotone-bg{
-        margin-top: 47.5px; /*header-margin 37.5px, actual margin 10px*/
-    }
-}
-
-@media ( min-width : 938px ){
+@media ( min-width : 600px ){ /*origin-938px*/
     .card{
-        width: 856px;
+        width: 99.53vw; /*origin-856px*/
         grid-template-columns: 375px 441px;
     }
     .card > div:nth-child(1){
@@ -345,7 +339,27 @@
     }
 }
 
-@media ( min-width : 950px ){
+@media ( min-width : 800px ) {
+    .duotone-bg{
+        margin-top: 47.5px; /*header-margin 37.5px, actual margin 10px*/
+    }
+}
+
+@media ( min-width : 600px) and ( max-width : 859px ){/*origin-nothing*/
+    .duotone-bg{
+        grid-template-columns: 344px auto;
+    }
+}
+
+@media ( min-width : 860px ){/*origin-nothing*/
+    .card{
+        width: 856px;
+    }
+}
+
+
+
+/* @media ( min-width : 950px ){
     .card{
         top: 50%;
         left: 50%;
@@ -353,4 +367,4 @@
         margin: 0;
         grid-template-columns: 375px 467.5px;
     }
-}
+} */
