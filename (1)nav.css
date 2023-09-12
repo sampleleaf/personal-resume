@@ -99,6 +99,7 @@
 .grid-container .nav2{
     z-index: 4;
     background-color: rgba(244, 236, 230);
+    position: fixed;
     top: 0;
 }
 

@@ -20,3 +20,38 @@ a{
 body{
     position: relative;
 }
+
+html {
+    scroll-behavior: smooth;/*href scroll*/
+}
+
+.toTop{
+    visibility: hidden;
+    position: fixed;
+    z-index: 3;
+    bottom: 30px;
+    right: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.toTop svg{
+    background-color: white;
+    color: rgb(0, 80, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+@media ( max-width : 599px ){
+    .scroll{
+        overflow: hidden;
+        position: fixed;
+    }
+}
+
+@media ( min-width : 600px ){
+    .toTop{
+        display: none;
+    }
+}
