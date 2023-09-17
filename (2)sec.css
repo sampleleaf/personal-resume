@@ -174,7 +174,7 @@
 }
 
 .grid-content div:nth-child(4){
-    font-family: 'Jost', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 5vw;
 }
 
@@ -362,7 +362,7 @@
 
 @media ( min-width : 600px) and ( max-width : 859px ){/*origin-nothing*/
     .duotone-bg{
-        grid-template-columns: 344px auto;
+        grid-template-columns: 337.188px auto;
     }
 }
 

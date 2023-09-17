@@ -46,7 +46,6 @@ html {
 @media ( max-width : 599px ){
     .scroll{
         overflow: hidden;
-        position: fixed;
     }
 }
 

@@ -1,6 +1,6 @@
 .grid-footer{
     display: grid;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     margin: 27px 0 40px;
 }
 
@@ -21,13 +21,13 @@
 }
 
 .grid-contact div p:nth-child(1){
-    font-family: 'Jost', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .grid-contact div p:nth-child(2){
-    font-family: 'Jost', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
 }
 
