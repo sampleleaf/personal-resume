@@ -10,10 +10,20 @@
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 20px;
     padding: 10px;
+    position: relative;
+    z-index: 4;
 }
 
 .grid-container .item1 b{
     padding-left: 10px;
+}
+
+.grid-container .item1 b a:link{
+    color: black;
+}
+
+.grid-container .item1 b a:visited{
+    color: black;
 }
 
 .grid-container .item2{
@@ -71,6 +81,16 @@
     font-size: 14px;
     letter-spacing: 0.5px;
     padding: 0px 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.grid-container .item3 a:link{
+    color: black;
+}
+
+.grid-container .item3 a:visited{
+    color: black;
 }
 
 .grid-container .nav{
@@ -132,7 +152,7 @@
         grid-template-columns: 185px 10px auto;
         align-items: center;
         margin: 0;
-        padding: 30px 10px;
+        padding: 30px 10px 42px;
         z-index: 5;
         position: fixed;
         top: 0;
@@ -168,13 +188,13 @@
     .grid-container .nav a:visited{
         color: rgb(0, 0, 0);
     }
-    .grid-container .nav a:hover{
-        color: rgb(0, 80, 255);
-    }
     .grid-container .nav a:nth-child(1):link{
         color: rgb(0, 80, 255);
     }
     .grid-container .nav a:nth-child(1):visited{
+        color: rgb(0, 80, 255);
+    }
+    .grid-container .nav a:hover{
         color: rgb(0, 80, 255);
     }
 }
@@ -183,7 +203,7 @@
     .grid-container{
         grid-template-columns: 220px 145px auto;
         align-items: center;
-        padding: 37.5px 10px;
+        padding: 37.5px 10px 48px;
     }
     .grid-container .item1{
         grid-area: 1 / 1 / 2 / 2;
@@ -209,6 +229,6 @@
 
 @media ( min-width : 950px ){
     .grid-container{
-        padding: 37.5px;
+        padding: 37.5px 37.5px 48px;
     }
 }

@@ -47,7 +47,7 @@
     height: 18px;
 }
 
-@media ( min-width : 410px ){
+@media ( min-width : 440px ){
     .grid-contact{
         grid-template-columns: repeat(3, auto);
     }
