@@ -97,6 +97,7 @@
     padding: 30px 25px;
     margin: 0 auto;
     display: grid;
+    width: 87.5vw;
 }
 
 .resume-card div p{
@@ -153,7 +154,7 @@
     }
     
     .resume-card:hover, .active{
-        transition: all 0.3s;
+        transition: background-color 0.3s;
         background-color: rgb(248, 245, 242);
     }
     
