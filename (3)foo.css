@@ -29,13 +29,16 @@
 .grid-contact div p:nth-child(2){
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
+    text-decoration: line-through;
 }
 
 .grid-contact > div:nth-child(3) > div{
     display: grid;
-    grid-template-columns: repeat(3, 18px);
+    grid-template-columns: repeat(2, 18px);
     transform: translate(-4px, 0);
     column-gap: 20px;
+    position: relative;
+    z-index: 3;
 }
 
 .grid-contact > div:nth-child(3) > div a:link, .grid-contact > div:nth-child(3) > div a:visited{

@@ -12,7 +12,8 @@
     background-color: rgb(230, 218, 206);
     width: 100%;
     /* height: calc(100vh - 86px - 165px - 227px);page-height - header-height - duotone-margin-height - footer-height */
-    height: calc((100vw - 40px) / 0.713 / 0.61);
+    /* height: calc((100vw - 40px) / 0.713 / 0.61); */
+    height: 265vw;
 }
 
 .duotone-bg div:nth-child(2){
@@ -47,6 +48,8 @@
 .grid-card div:nth-child(1){
     align-self: center;
     margin: 10px auto 0 auto;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .grid-card div:nth-child(1) img{
@@ -108,7 +111,7 @@
     width: calc(100vw - 57px);
     height: 40px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: center;
     align-content: center;
     column-gap: 9.375vw; /*30px*/
@@ -178,6 +181,10 @@
     font-size: 5vw;
 }
 
+.grid-content div ul{
+    padding-left: 20px;
+}
+
 @media ( min-width : 375px ){
     .grid-card div:nth-child(1) img{
         width: 140.25px;
@@ -213,7 +220,8 @@
 
 @media ( min-width : 415px ) {
     .duotone-bg div:nth-child(1){
-        height: 862px;
+        /* height: 862px; */
+        height: 1105px;
     }
     /*card*/
     .card{

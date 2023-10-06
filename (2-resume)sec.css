@@ -126,6 +126,12 @@
 .resume-card-content2 p{
     font-size: 17px;
 }
+
+.resume-card-content2 ul{
+    font-family: 'Red Hat Display', sans-serif;
+    padding-left: 20px;
+}
+
 @media ( min-width : 410px ){
     .resume-card{
         width: 358.75px;
@@ -188,7 +194,7 @@
     .resume-card{
         width: 724px;
         height: 367.5px;
-        padding: 85px 50px 0;
+        padding: 75px 50px 0;
         margin-bottom: 39px;
         grid-template-columns: 43% 57%;
     }
