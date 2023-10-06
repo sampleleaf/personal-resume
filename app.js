@@ -51,7 +51,7 @@ const activebg = document.querySelectorAll('.resume-card')
 // }
 
 for(let i = 0; i < collapse.length; i++){
-    collapse[i].addEventListener('click', function(){
+    activebg[i].addEventListener('click', function(){
         activebg[i].classList.toggle('active')
         collapse[i].nextElementSibling.classList.toggle('resume-card-content3');
         collapse[i].children[3].classList.toggle('click')
