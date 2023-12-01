@@ -34,7 +34,7 @@
 
 .grid-contact > div:nth-child(3) > div{
     display: grid;
-    grid-template-columns: repeat(2, 18px);
+    grid-template-columns: repeat(3, 18px);
     transform: translate(-4px, 0);
     column-gap: 20px;
     position: relative;

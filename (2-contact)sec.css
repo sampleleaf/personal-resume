@@ -80,7 +80,7 @@
 
 .contact-icon{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
     margin: 25px;
 }
@@ -94,6 +94,10 @@
 }
 
 .contact-icon a:nth-child(2):link svg, .contact-icon a:nth-child(2):visited svg{
+    color: rgb(10, 102, 194);
+}
+
+.contact-icon a:nth-child(3):link svg, .contact-icon a:nth-child(3):visited svg{
     color: rgb(237, 12, 230);
 }
 
